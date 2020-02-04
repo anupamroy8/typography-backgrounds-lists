@@ -1,0 +1,372 @@
+/* CSS Reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* My Reset */
+a {
+  text-decoration: none;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+button {
+  outline: 0;
+}
+
+/* General */
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/* Header */
+.header {
+  padding: 16px 0;
+  width: 100%;
+  background-color: rgb(33, 33, 56);
+  background-image: url(../media/banner.svg);
+  background-repeat: repeat-x;
+  background-position: 25% bottom;
+  color: #ffffff;
+  /* height: 600px; */
+}
+.logo {
+  color: rgb(219, 219, 219);
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.header__menu a {
+  color:  rgb(219, 219, 219);
+  font-size: 20px;
+  margin-left: 32px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.hero {
+  text-align: center;
+  margin-top: 150px;
+}
+.hero h2 {
+  font-size: 44px;
+  font-weight: bold;
+
+}
+
+.hero h3 {
+  color: #E76B77;
+  font-size: 30px;
+}
+/* Button */
+.btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 24px 16px 24px 0;
+  font-weight: bold;
+}
+.btnred {
+  background: #E76B77;
+  border: 1px solid #E76B77;
+  color: #ffffff;
+}
+/* secondary */
+.secondary {
+  background-color: #F5F5F5;
+  padding-bottom: 60px;
+}
+.padding {
+  padding: 100px 0;
+}
+.center {
+  text-align: center;
+}
+.sec-head {
+  font-size: 30px;
+  margin: 12px 0;
+  font-weight: bold;
+  color: rgb(55, 55, 55);
+}
+.sec-para {
+  color: rgb(64, 64, 64);
+  margin-bottom: 10px;
+}
+/* secondary box */
+.box {
+  width: 30%;
+  background-color: #ffffff;
+  padding: 36px 24px;
+  text-align: center;
+}
+.boxbottom {
+  border-bottom: 1px solid rgb(150, 150, 150);
+}
+.box h5 {
+  font-size: 30px;
+  margin: 12px 0;
+  font-weight: bold;
+  color: rgb(55, 55, 55);
+}
+.box p {
+  color: rgb(64, 64, 64);
+  margin-bottom: 20px;
+}
+
+/* Icons */
+.icon {
+  height: 100px;
+  width: 100px;
+  
+  border-radius: 50%;
+  text-align: center;
+  font-size: 50px;
+  margin: 0 auto;
+}
+.redbg {
+  background-image: linear-gradient(45deg, rgb(187, 66, 78) 50%, rgba(231, 107, 119, 0.89) 50%);
+}
+.blackbg{
+  background-image: linear-gradient(45deg, rgb(55, 55, 55) 50%, rgb(150, 150, 150) 50%);
+}
+.icon i {
+  padding-top: 20px;
+  color: #ffffff;
+  font-size: 60px;
+}
+
+/* Tertiary  */
+.tertiary {
+  background-color: #E76B77;
+  padding-bottom: 60px;
+  color: #ffffff;
+}
+.ter-head {
+  font-size: 30px;
+  margin: 12px 0;
+  font-weight: bold;
+  color: #ffffff
+}
+.ter-para {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.boxter {
+  width: 48%;
+  background-color: rgb(226, 133, 142);
+  padding: 36px 24px;
+  text-align: center;
+  border-bottom: 1px solid rgb(150, 150, 150);
+  margin: 12px;
+}
+.boxter h5 {
+  font-size: 30px;
+  margin: 12px 0;
+  font-weight: bold;
+  color: #ffffff;
+}
+.boxter p {
+  color: #F5F5F5
+  margin-bottom: 20px;
+}
+/*  Quaternary  */
+
+.quaternary {
+  padding-bottom: 60px;
+}
+img {
+  width: 110%;
+  object-fit: contain;
+}
+.btnlearn {
+  background: none;
+  border: 1px solid  rgb(64, 64, 64);
+  color: rgb(55, 55, 55);
+}
+
+/* Contact */
+.contactform {
+  background-color: #ffffff;
+  
+}
+.formbox {
+  padding: 20px;
+  background: none;
+  width: 60%;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  margin-bottom: 24px;
+  padding: 8px 16px;
+  font-size: 18px;
+  border: 1px solid rgb(173, 173, 173);
+}
+.social {
+  padding: 20px;
+}
+.flex2 {
+  display: flex;
+}
+.borderb{
+  margin: 16px 0;
+  border-bottom: 1px solid rgb(150, 150, 150);
+}
+.borderb {
+  display: flex;
+  align-items: center;
+  margin: 24px 40px;
+}
+.borderb i {
+  width: 32px;
+}
+
+/* Footer */
+.footer {
+  background-color: rgba(156, 154, 154, 0.993);
+  padding: 40px 0;
+  text-align: center;
+  color: rgb(64, 64, 64);
+}
