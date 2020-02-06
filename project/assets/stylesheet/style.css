@@ -217,6 +217,23 @@ body {
   background-color: #F5F5F5;
   padding-bottom: 60px;
 }
+.line {
+	width: 180px;
+	border-bottom: 1px solid black;
+	margin: 3px 0;
+}
+.line2 {
+	width: 160px;
+}
+.line3 {
+	width: 140px;
+}
+.line-col {
+	flex-direction: column;
+}
+.line-col1 {
+	align-items: flex-end;
+}
 .padding {
   padding: 100px 0;
 }
@@ -241,7 +258,7 @@ body {
   text-align: center;
 }
 .boxbottom {
-  border-bottom: 1px solid rgb(150, 150, 150);
+  border-bottom: 2px solid rgb(204, 201, 201);
 }
 .box h5 {
   font-size: 30px;
@@ -328,7 +345,8 @@ img {
 /* Contact */
 .contactform {
   background-color: #ffffff;
-  
+  width: 90%;
+  margin: 0 auto;
 }
 .formbox {
   padding: 20px;
@@ -345,10 +363,12 @@ img {
   border: 1px solid rgb(173, 173, 173);
 }
 .social {
-  padding: 20px;
+  padding: 0 20px;
+  line-height: 2.5;
 }
 .flex2 {
   display: flex;
+  align-items: center;
 }
 .borderb{
   margin: 16px 0;

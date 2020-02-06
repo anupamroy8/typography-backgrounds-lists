@@ -178,15 +178,14 @@ body {
     background-image: linear-gradient(to right, #2E2A23 , #E64D44);
 }
 .rad {
-    background-image: radial-gradient(#E64D44, #2E2A23 );
+    background-image: radial-gradient(rgb(230, 77, 68), #2E2A23 );
 }
 /* Big Box */
 .bigbox {
     padding: 220px 100px;
     width: 80%;
     border-radius: 30px;
-    background-image: url(../media/pic02.jpg);
-    opacity: 0.8;
+    background-image: linear-gradient(to right, rgba(122,117,102, 0.5),  rgba(197,66,33, 0.5)), url(../media/pic02.jpg);
 }
 
 .padding {
